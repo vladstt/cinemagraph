@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Project - Cinemagraph</title>
+    <link href="core/semantic.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="ui secondary inverted pointing menu">
+        <div class="item logo">
+          <a href="step1.html">Cinemagraph</a>
+        </div>
+        <a class="item new-projects">
+          <i class="plus icon"></i>
+          New Projects
+        </a>
+        <div class="right menu">
+          <a class="ui item projects-trigger">
+            Your Projects
+          </a>
+          
+          <!-- the "Your Projects" popup below -->
+          
+          <div class="ui flowing inverted popup top left transition hidden padded segment">
+            <h2>Recent Projects</h2>
+            <div class="ui three column center relaxed center aligned grid">
+              <div class="column">
+                <img src="http://loremflickr.com/100/100/dog" class="ui rounded centered image">
+                <h4 class="ui header">Older Video</h4>
+                <a class="ui tiny inverted fluid button">Open</a>
+              </div>
+              <div class="column">
+                <img src="http://loremflickr.com/100/100/cat" class="ui rounded centered image">
+                <h4 class="ui header">Older Video</h4>
+                <a class="ui tiny inverted fluid button">Open</a>
+              </div>
+              <div class="column">
+                <img src="http://loremflickr.com/100/100/paris" class="ui rounded centered image">
+                <h4 class="ui header">Older Video</h4>
+                <a class="ui tiny inverted fluid button">Open</a>
+              </div>
+            </div>
+            
+            <div class="ui divider"></div>
+            
+            <div class="ui grid center aligned grid">
+              <div class="sixteen wide column">
+                <a href="videos.html" class="ui tiny blue button">View All</a>
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- the "Your Projects" popup END -->
+          
+          <a class="ui item show-user-settings">
+            Profile
+          </a>
+          <div class="ui item show-user-settings">
+            <img src="images/icon.png" width="35" />
+          </a>
+        </div>
+      </div>
+      
+      
+      
+    </header>
+    <div class="ui fluid container top-padded">
+      <div class="ui project padded basic segment">
+        <h1>Untitled Project</h1>
+      </div> <!-- .padded segment -->
+        <div class="ui stackable no-padded grid">
+        <div class="seven wide column">
+          
+          <div class="ui inverted styled fluid accordion">
+            <div class="active title">
+              <span class="ui circular label">1</span>
+              Crop your video
+              <i class="green checkmark icon"></i>
+            </div>
+            <div class="active content">
+              <div class="small">Drag the blue edges of the selection below to select the crop area for your video.</div>
+              
+              <div class="ui relaxed grid">
+                <div class="twelve wide column">
+                  <img src="images/trimmer.png" width="380" class="ui image">
+                </div>
+                <div class="four wide column right aligned">
+                  <span class="timer">0:50</span>
+                </div>
+                <div class="twelve wide column">
+                  <a href="#" class="ui large inverted button">Next Step</a> <!--Nexxt button-->
+
+                  <a class="ui inverted basic button">
+                    <i class="refresh icon"></i>
+                    Reset
+                  </a>
+                  
+                </div>
+              </div>
+              
+               
+            </div> <!-- crop your video -->
+            
+            <div class="title">
+              <span class="ui circular label">2</span> 
+              Select your video thumbnail
+              <i class="green checkmark icon"></i>
+            </div>
+            <div class="content">
+              <div class="small">
+                Slide the cursor anywhere on the video timeline to select a thumbnail for your video. Your thumbnail will be shown on the right                         </div>
+              
+                <div class="ui relaxed grid">
+                  <div class="sixteen wide column">
+                    <img src="images/video%20small.png" width="490" class="ui image">
+                  </div>
+                  <div class="twelve wide column">
+                    <a href="#" class="ui large inverted button">Next Step</a> <!--Nexxt button-->
+                  </div>
+                  <div class="four wide column middle aligned">
+                    <a class="ui inverted basic button">
+                      <i class="refresh icon"></i>
+                      Reset
+                    </a>
+                  </div>
+                </div>
+            </div>
+              <div class="title">
+                <span class="ui circular label">3</span> 
+                Save &amp; Share
+              </div>
+
+              <div class="content">
+                <div class="ui middle aligned relaxed grid">
+                  <div class="twelve wide column">
+                    <div class="small no-bottom-padd">
+                      If you’re happy with your videos you can save it to the cloud. Once your video was saved you can share it with the world.
+                    </div>
+                    
+
+                    
+                  </div> <!-- .column -->
+                  <div class="four wide column">
+                    
+                    <div class="circular loader">
+                      <div class="progress pie-loader"></div>
+                      
+                      <a class="circular ui icon button save">
+                        <img src="images/mini-cloud.png" width="30" />
+                        <strong>Save</strong>
+                      </a>
+                      
+                      <div class="check">
+                        <i class="checkmark icon"></i>
+                      </div>
+                      
+                    </div> <!-- .circular loader -->
+                  </div> <!-- .column -->
+
+                  
+                </div> <!-- grid -->
+                
+                <div class="social-panel" id="socialPanel">
+                
+                  <div class="ui grid">
+                    <div class="sixteen wide column">
+                      <h2>Share with a link</h2>
+                      <div class="ui fluid action input">
+                       <input type="text" value="http://cinemagraph.com/xIUzBHxas32">
+                        <button class="ui right labeled icon button">
+                          <i class="clone icon"></i>
+                          Copy
+                        </button>
+                      </div> <!-- copy input -->
+                    </div>
+                  </div> <!-- .grid -->
+
+
+                  <div class="ui grid">
+                    <div class="sixteen wide column">
+                      <h2 class="sub header">Share on social networks</h2>
+                      <div class="small will-go">(Still uploading to the cloud)</div>
+
+                      <a class="social" href="#">
+                        <img src="images/twitter-icon.png" width="32" class="ui centered image" />
+                        <span>Twitter</span>
+                      </a>
+                      <a class="social" href="#">
+                        <img src="images/facebook-icon.png" width="32" class="ui centered image" />
+                        <span>Facebook</span>
+                      </a>
+                      <a class="social" href="#">
+                        <img src="images/twitter-icon.png" width="32" class="ui centered image" />
+                        <span>Google+</span>
+                      </a>
+                      <a class="social" href="#">
+                        <img src="images/google-plus-icon.png" width="32" class="ui centered image" />
+                        <span>Tumblr</span>
+                      </a>
+                      <a class="social" href="#">
+                        <img src="images/blogger-icon.png" width="32" class="ui centered image" />
+                        <span>Blogger</span>
+                      </a>
+                    </div> <!-- column -->
+                  </div> <!-- grid -->
+
+
+                  <div class="ui grid">
+                    <div class="sixteen wide column">
+
+                    <h2 class="sub header">Download to your computer</h2>
+                      <div class="small will-go">(Still uploading to the cloud)</div>
+
+                      <a href="#" class="ui large inverted download button">Download</a> <!--login button-->
+
+                    </div> <!-- column -->
+
+                  </div> <!-- grid -->
+                  
+                </div> <!-- .social-panel -->
+              </div> <!-- content -->
+            </div>
+          </div>
+        <div class="nine wide column">
+          <img src="images/video.jpg" class="ui image">
+        </div> <!-- video preview column -->
+      </div>
+      
+    </div> <!-- fluid container -->
+
+    
+    
+    <!-- the user modal -->
+    
+    <div class="ui user-settings basic tiny modal">
+        <i class="times icon close"></i>
+        <div class="header center aligned">
+          <h1>Account Settings</h1>
+        </div>
+        <div class="ui rounded segment">
+          <div class="user-header">
+            <div class="user-header-info">
+              <img src="http://placehold.it/100x100" class="ui centered circular image">
+              <h6>Kathryn Ramirez</h6>
+            </div>
+          </div>
+          <div class="ui large form">
+            <div class="field">
+              <label>Your Name</label>
+              <input type="text" placeholder="Your Name" value="Kathryn Ramirez" />
+            </div>
+            <div class="field">
+              <label>Email Address</label>
+              <input type="email" placeholder="Email Address" value="kathrynramy@gmail.com" />
+            </div>
+            
+            <div class="two fields">
+              <div class="field">
+                <label>Password</label>
+                <input placeholder="" type="password" />
+              </div>
+              <div class="field">
+                <label>Retype Password</label>
+                <input placeholder="" type="password" />
+              </div>
+            </div>
+            <button class="submit-button ui big fluid large blue button">Save Changes</button>
+        </div> <!-- large form -->
+      </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="core/semantic.min.js"></script> 
+    <script src="js/circularprogress.jquery.min.js"></script>
+    <script src="js/cinemagraph.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+
+          $('.save').click(function() {
+            $(this).hide();
+            $('#socialPanel').addClass('available');
+            
+            $('.pie-loader').show().circles({
+              'targetPos':360,
+              showProgress: 1,
+              progPostText: '%',
+              speed: 4,
+              scale: 100,
+              onFinishMoving:function(pos){
+                $('.circular.loader').addClass('done');
+                $('a.download').removeClass('inverted').addClass('blue');
+                $('.will-go').addClass('gone');
+              }
+            });
+          });
+          
+
+        });
+    </script>
+    
+  </body>
+</html>

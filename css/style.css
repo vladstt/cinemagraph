@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,400,700');
+body {
+  background: #181a21 url(../images/backgrounblur.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+}
+
+body.login {
+  background: #181a21 url(../images/background.png) 50% 50% no-repeat;  /* login background */
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 80;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+h1 + .subtitle {
+  display: block;
+  margin-top: -15px;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+h6 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.item.logo {
+  font-size: 20px;
+  font-weight: 300;
+}
+p {
+  margin: 0 0 1em;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.subtitle {
+ color: #4e5056;
+}
+header .ui.secondary.pointing.menu .item {
+  align-self: center;
+}
+.ui.secondary.pointing.menu .item.new-projects {
+  background-color: #25252f !important;
+  border-radius: 4px;
+  font-weight: 100;
+  padding: 10px 20px 10px 15px; 
+}
+.ui.blue.button {
+  background-image: linear-gradient(-42deg, #5DDDD3 1%, #3FB6CD 38%, #0F77C3 98%);
+}
+#loader {
+  background: url(../images/cloud.png) no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.upload:hover {
+  opacity: .7;
+}
+.upload {
+  cursor: pointer;
+}
+.percentage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 52px;
+}
+.upload .percentage {
+  background: url(../images/cloud-icon.png) no-repeat 50% 46%;
+  background-size: 98px;
+}
+.top-padded {
+  padding-top: 80px
+}
+.project h1 {
+  font-style: italic;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.grid .six.wide.column {
+  width: 560px;
+}
+.grid.ten.wide.column {
+  width: 870px;
+}
+.ui.fluid.accordion, 
+.ui.fluid.accordion .accordion {
+  background-color: #17171f;
+}
+.ui.inverted.accordion .title:not(.ui) {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(115, 115, 115, 0.15);
+} 
+.ui.styled.accordion .accordion .active.title, 
+.ui.styled.accordion .active.title,
+.ui.styled.accordion .accordion .active.title + .content, 
+.ui.styled.accordion .active.title + .content,
+.ui.accordion .accordion .active.content, 
+.ui.accordion .active.content {
+  background-color: #25252f;
+
+}
+.ui.circular.label,
+.ui.circular.labels .label {
+  min-width: 2em;
+  min-height: 2em;
+  padding: .5em!important;
+  line-height: 1em;
+  text-align: center;
+  border-radius: 500rem;
+}
+.accordion .circular.label {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-right: 10px;
+  width: 30px;
+  min-width: 32px;
+  max-height: 30px;
+  height: 30px;
+  min-height: 32px;
+  padding: 0!important;
+  line-height: 28px;
+  font-size: 15px;
+  max-width: 30px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.ui.styled.accordion .accordion .content, 
+.ui.styled.accordion .content {
+  margin: 0;
+  padding: 5px 40px 30px;
+  transition: all .5 ease-in-out;
+}
+.accordion .content .small {
+  opacity: 0.5;
+  font-size: 12px;
+  color: white;
+  line-height: 19px;
+  max-width: 260px;
+  font-weight: 300;
+  padding: 0 0 25px;
+}
+.accordion .content .small.no-bottom-padd {
+  padding-bottom: 0;
+}
+.accordion .content .small.gone {
+  color: transparent;
+  padding-bottom: 5px;
+}
+.grid .content span.timer {
+  font-size: 36px;
+  opacity: 0.3;
+  color: white;
+  font-weight: 300;
+}
+.ui.no-padded.grid>.column:not(.row), 
+.ui.no-padded.grid>.row>.column {
+  padding: 0;
+}
+
+.accordion .large.button {
+  font-size: 1.14285714rem;
+  min-width: 240px;
+}
+.accordion .inverted.basic.button {
+  opacity: .5;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-size: 13px;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 0;
+  margin-left: 30px;
+}
+.accordion .inverted.basic.button i {
+  margin-right: 0 !important;
+}
+.accordion .inverted.basic.button:hover {
+  box-shadow: none !important;
+}
+.accordion .content .save {
+  background-image: linear-gradient(-42deg, #5DDDD3 1%, #3FB6CD 38%, #0F77C3 98%);
+  border: 5px solid #2e2e39;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.accordion .content .save strong {
+  color: white;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.four.wide.column {
+  transition: all .5 ease-in-out;
+}
+i.green.icon {
+  color: #21BA45 !important;
+  float: right;
+  font-size: 24px;
+}
+
+/* Adding the pie loader styles here */
+.circular.loader {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+  transition: width .5s ease-in-out;
+  float: right;
+}
+.circular.loader.done {
+  width: 70px;
+  height: 70px;
+}
+.circular.loader .check {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 120px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+}
+.circular.loader.done .check {
+  top: 0;
+}
+.circular.loader.done .display {
+  top: -120px;
+}
+.circular.loader .check i {
+  margin: 0;
+  height: auto;
+  font-size: 24px;
+  margin-top: 0;
+  width: auto;
+  line-height: 1;
+}
+.pie-loader {
+  display: none;
+}
+.progress {
+  position: relative;
+  padding-bottom: 100%
+}
+.progress .progressinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(-42deg, #5DDDD3 1%, #3FB6CD 38%, #0F77C3 98%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url('static/css/boxsizing.htc');
+  overflow: hidden;
+  border: 5px solid #2e2e39;
+}
+.progress .progressinner .lpane,
+.progress .progressinner .rpane {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  overflow: hidden;
+  transition: all .5 ease-in-out;
+}
+.circular.loader.done .lpane,
+.circular.loader.done .rpane {
+  opacity: 0;
+}
+.progress .progressinner .lpane .cover,
+.progress .progressinner .rpane .cover {
+  position: absolute;
+  top: -5%;
+  left: 100%;
+  width: 100%;
+  height: 110%;
+  background: rgba(0,0,0,.3);
+  transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -moz-transform-origin: 0 50%;
+  -o-transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%
+}
+.progress .progressinner .rpane {
+  left: 50%;
+  right: 0;
+}
+.progress .progressinner .rpane .cover {
+  left: auto;
+  right: 100%;
+  transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  -webkit-transform-origin: 100% 50%
+}
+.progress .progressinner .display {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all .5s ease-in-out;
+}
+.accordion .action.input {
+  ackground: white;
+} 
+.accordion .action.input .button {
+    background: white;
+    padding-right: 35px !important;
+}
+.accordion .action.input .button .clone.icon {
+  background: white;
+}
+.social {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  min-width: 70px;
+  text-align-last: center;
+}
+.social span {
+  font-size: 12px;
+  color: #66666d;
+}
+.sub.header {
+  margin: 0;
+}
+.accordion .content h2 {
+  padding-top: 20px;
+}
+.accordion .content h2:first-child {
+  padding-top: 20px;
+}
+.accordion .content h2 + .small {
+  padding-bottom: 25px;
+  display: block;
+  padding-top: 0;
+}
+.social-panel {
+  height: 0;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+.social-panel.available {
+  height: 100%;
+}
+
+/* User settings area */
+.ui.button.show-user-settings {
+  background: rgba(2, 24, 40, 0.5);
+  color: white;
+  font-weight: 300;
+}
+.user-settings h4 {
+  color: #333;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.user-settings.ui.modal {
+  border-radius: 10px;
+  border: 0;
+}
+.user-settings.ui.modal .header.center {
+  padding-bottom: 15px;
+}
+.user-settings.ui.modal .header.center.aligned * {
+  text-align: center;
+}
+.user-settings.ui.modal .header h1 + p {
+  margin-top: -10px;
+  opacity: .5;
+  font-weight: 100;
+}
+.user-settings.ui.modal > .close {
+  background: #000;
+  border-radius: 50% !important;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+.user-settings.ui.modal > .close:before {
+  color: white;
+  font-size: 14px;
+  line-height: 19px;
+}
+.user-settings.ui.modal > .close:hover:before {
+  color: white;
+  opacity: .5;
+}
+.user-settings.ui.modal.basic > .close {
+  top: 1.9rem;
+  right: 0;
+  color: white;
+}
+.user-settings.ui.modal.basic h1 + p {
+  max-width: 500px !important;
+  margin: 0 auto;
+}
+.user-settings.ui.modal h6 {
+  color: #333;
+  padding-bottom: 25px;
+  padding-top: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-settings .ui.segment.rounded {
+  border-radius: 10px;
+  border: 0;
+  padding: 30px;
+}
+
+.user-settings .ui.large.form .field {
+  margin-bottom: 1.5rem;
+}
+.user-settings .ui.large.form .field label {
+  font-size: 13px;
+  padding-bottom: 0.3rem;
+}
+.user-settings .ui.large.form .field label * {
+  font-size: 13px;
+}
+.user-settings .ui.large.form .field.check {
+  margin-bottom: 0.5rem;
+}
+.user-settings .ui.large.form .field.check:last-child {
+  margin-bottom: 1.5rem;
+}
+.user-settings .ui.large.form .field input {
+  padding: 1rem;
+}
+.user-header {
+  background: url(../images/backgrounblur.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  border-radius: 9px 9px 0 0;
+  margin: -30px -30px 130px;
+  padding: 0;
+  height: 100px;
+}
+.user-header .user-header-info {
+  position: relative;
+  top: 50px;
+}
+.user-header .user-header-info h6 {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 10px;
+}
+/*
+.blurring.dimmable > .dimmer {
+  background-color: radial-gradient(50% 50%, rgba(2,24,40,0.63) 50%, rgba(1,14,24,0.67) 98%);
+  background-image: radial-gradient(50% 50%, rgba(18, 26, 33, 0.73) 50%, rgba(0, 0, 0, 0.56) 98%);
+}
+*/
+.blurring.dimmable>.dimmer {
+  background-color: rgba(19, 20, 25, 0.76);
+}
+
+/* Video Cards */
+.ui.card, .ui.video.cards>.card {
+  box-shadow: none;
+  overflow: hidden;
+  margin: 15px;
+}
+.ui.card>.content,
+.ui.cards>.card>.content {
+  border-top: 0;
+}
+.login-urgent {
+  padding-top: 30px;
+}
+.login-urgent * {
+  color: white;
+}
+.login-urgent a:hover {
+  color: white;
+  opacity: .6;
+}
+.login-urgent .ui.divider {
+  color: white;
+  opacity: .5;
+}
+/* Tiny Modal */
+@media only screen and (min-width: 768px) {
+  .ui.tiny.modal {
+    width: 70.4%;
+    margin: 0em 0em 0em -35.2%;
+  }
+  .accordion .large.button {
+    min-width: 180px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ui.tiny.modal {
+    width: 360px;
+    margin: 0em 0em 0em -180px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .ui.tiny.modal {
+    width: 420px;
+    margin: 0em 0em 0em -210px;
+  }
+}

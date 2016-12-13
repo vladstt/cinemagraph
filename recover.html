@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost Password - Cinemagraph</title>
+    <link href="core/semantic.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style type="text/css">
+      body > .grid {
+        height: 100%;
+      }
+      .image {
+        margin-top: -100px;
+      }
+      .column {
+        max-width: 300px;
+      }
+    </style>
+  </head>
+  
+  <body class="login">
+
+      
+      <div class="ui middle aligned center aligned grid">
+        <div class="column">
+           <img src="images/key.png" width="130" class="ui centered image"> 
+          <h1>Lost Password?</h1>
+          <form class="ui large form">
+              <div class="field">
+                <div class="ui left icon input">
+                  <i class="mail icon"></i>
+                  <input type="text" name="email" placeholder="E-mail address">
+                </div>
+              </div>
+              <a href="login.html" class="ui fluid large inverted button">Recover Password</a> <!--recover password button-->
+          </form> <!--form-->
+          
+          <div class="login-urgent">
+            <div class="ui horizontal divider">
+              Or
+            </div>
+            
+            <a href="login.html" title="Recover Password">Back to login</a>
+            
+          </div> <!-- login urgent -->
+          
+        </div> <!--column-->
+      </div> <!--aligned grid-->
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="core/semantic.min.js"></script>
+  </body>
+</html>

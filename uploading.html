@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Upload - Cinemagraph</title>
+    <link href="core/semantic.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style type="text/css">
+      body > .grid {
+        height: 100%;
+      }
+      .image {
+        margin-top: -100px;
+      }
+      .column {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+      <div class="ui secondary inverted pointing menu">
+        <div class="item logo">
+          <a href="step1.html">Cinemagraph</a>
+        </div>
+        <a class="item new-projects">
+          <i class="plus icon"></i>
+          New Projects
+        </a>
+        <div class="right menu">
+          <a class="ui item">
+            Your Projects
+          </a>
+          <a class="ui item">
+            Profile
+          </a>
+          <div class="ui item">
+            <img src="images/icon.png" width="35" />
+          </a>
+        </div>
+      </div>
+
+    </header>
+    
+      <div class="ui middle aligned center aligned grid">
+        <div class="column">
+          <div class="upload file-uploader" id="loader">
+            <span class="percentage"></span>
+          </div>
+          <h1>Get Started</h1>
+          <span class="subtitle">Upload your first video</span>
+        </div> <!--column-->
+      </div> <!--aligned grid-->
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="core/semantic.min.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    
+    <script type="text/javascript">
+      
+      $(document).ready(function() {
+        $('.file-uploader').click(function() {
+          $(this).removeClass('upload');
+          $('h1').text('Uploading video...');
+          $('.subtitle').text('This will only take a few moments');
+        
+          $(this).circleProgress({
+            value: 0.75,
+            startAngle: -1.6,
+            lineCap: 'round',
+            size: 200,
+            thickness: 10,
+            emptyFill: 'transparent',
+            fill: {
+              gradient: ["#5dddd3", "#117ac4"]
+            }
+          }).on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('span').html((stepValue.toFixed(2) + '%').substring(2));
+          });
+        }); // ending on click
+      });
+      
+
+    </script>
+    
+  </body>
+</html>
